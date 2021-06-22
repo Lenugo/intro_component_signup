@@ -3,22 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
-
-		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
+		<link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon-32x32.png" />
 		<title>Frontend Mentor | Intro component with sign up form</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
+		<link rel="stylesheet" href="./src/main.css">
 	</head>
 	<body>
 		<main class="container">
@@ -38,11 +25,11 @@
 
 			<div class="container__form">
 				<form action="">
-					<input type="text" name="" id="" placeholder="First Name" />
-					<input type="text" name="" id="" placeholder="Last Name" />
-					<input type="email" name="" id="" placeholder="Email Address" />
-					<input type="password" name="" id="" placeholder="Password" />
-					<button>Claim your free trial</button>
+					<input type="text" id="first-name" placeholder="First Name" />
+					<input type="text" id="last-name" placeholder="Last Name" />
+					<input type="email" id="email" placeholder="Email Address" />
+					<input type="password" id="password" placeholder="Password" />
+					<button class="btn-form">Claim your free trial</button>
 					<p class="footer-text">
 						By clicking the button, you are agreeing to our
 						<span class="form-text-strong">Terms and Services</span>
@@ -51,11 +38,12 @@
 			</div>
 		</main>
 
-		<footer>
+		<!-- <footer>
 			<p class="attribution">
 				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
 				Coded by <a href="#">Your Name Here</a>.
 			</p>
-		</footer>
+		</footer> -->
+		<script src="./src/main.js"></script>
 	</body>
 </html>
