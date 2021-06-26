@@ -7,6 +7,7 @@
 	--color-dark-blue: hsl(249, 10%, 26%);
 	--color-grayish-blue: hsl(246, 25%, 77%);
 	--color-white: hsl(255, 100%, 100%);
+	--color-shadow: rgba(0, 0, 0, 0.2);
 }
 
 *,
@@ -22,10 +23,12 @@ body {
 	font-family: "Poppins", sans-serif;
 }
 
+/* container info */
+
 .container {
 	max-width: 375px;
 	height: 100vh;
-	margin: 30px auto;
+	margin: 10px auto;
 	background: url(../public/images/bg-intro-mobile.png) no-repeat var(--color-red);
 }
 
@@ -49,11 +52,12 @@ body {
 	padding-bottom: 30px;
 }
 
+/* container try */
 .container__try {
 	display: flex;
 	align-items: center;
 	width: 90%;
-	margin: 0 auto 40px auto;
+	margin: 0 auto 20px auto;
 	background-color: var(--color-blue);
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
@@ -64,15 +68,64 @@ body {
 	padding: 0 80px;
 	text-align: center;
 	color: var(--color-white);
-	box-shadow: 0 6px rgba(0, 0, 0, 0.2);
-}
-
-.container_try-text {
-	font-weight: 0;
+	box-shadow: 0 6px var(--color-shadow);
 }
 
 .try-text-strong {
 	font-weight: 700;
+}
+
+/* contaienr form */
+
+.container__form {
+	width: 90%;
+	margin: 0 auto;
+	background-color: var(--color-white);
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border: 0;
+	padding: 14px;
+	box-shadow: 0 7px var(--color-shadow);
+	/*height: 320px;*/
+}
+
+.container__form .form {
+	display: flex;
+	flex-direction: column;
+}
+
+.container__form .btn-form {
+	padding: 16px;
+	background-color: var(--color-green);
+	border: 0;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	box-shadow: 0 2px var(--color-shadow);
+	font-weight: 600;
+	color: var(--color-white);
+	font-size: large;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.container__form .footer-text {
+	text-align: center;
+	font-size: small;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.form-text-strong {
+	font-weight: bold;
+	color: var(--color-red);
 }
 
 /* 
