@@ -31,7 +31,7 @@ body {
 
 .container__info {
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto 36px auto;
 	color: var(--color-white);
 }
 
@@ -47,6 +47,32 @@ body {
 	font-size: 17px;
 	margin: 0 auto;
 	padding-bottom: 30px;
+}
+
+.container__try {
+	display: flex;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto 40px auto;
+	background-color: var(--color-blue);
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	height: 88px;
+	padding: 0 80px;
+	text-align: center;
+	color: var(--color-white);
+	box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.container_try-text {
+	font-weight: 0;
+}
+
+.try-text-strong {
+	font-weight: 700;
 }
 
 /* 
