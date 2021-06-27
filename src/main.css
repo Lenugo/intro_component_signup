@@ -8,6 +8,7 @@
 	--color-grayish-blue: hsl(246, 25%, 77%);
 	--color-white: hsl(255, 100%, 100%);
 	--color-shadow: rgba(0, 0, 0, 0.2);
+	--color-border-input: #ccc;
 }
 
 *,
@@ -28,7 +29,7 @@ body {
 .container {
 	max-width: 375px;
 	height: 100vh;
-	margin: 10px auto;
+	margin: 0 auto;
 	background: url(../public/images/bg-intro-mobile.png) no-repeat var(--color-red);
 }
 
@@ -79,6 +80,7 @@ body {
 
 .container__form {
 	width: 90%;
+	height: max-content;
 	margin: 0 auto;
 	background-color: var(--color-white);
 	display: flex;
@@ -91,16 +93,17 @@ body {
 	border: 0;
 	padding: 14px;
 	box-shadow: 0 7px var(--color-shadow);
-	/*height: 320px;*/
 }
 
 .container__form .form {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	height: min-content;
 }
 
 .container__form .btn-form {
-	padding: 16px;
+	padding: 14px;
 	background-color: var(--color-green);
 	border: 0;
 	border-radius: 4px;
@@ -114,18 +117,31 @@ body {
 	font-size: large;
 	text-transform: uppercase;
 	font-weight: lighter;
+	margin: 6px 0;
 }
 
 .container__form .footer-text {
 	text-align: center;
 	font-size: small;
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto 6px auto;
 }
 
 .form-text-strong {
 	font-weight: bold;
 	color: var(--color-red);
+}
+
+.form__input-text {
+	padding: 10px;
+	margin: 6px 0;
+	border: 1px solid var(--color-border-input);
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-weight: 700;
 }
 
 /* 
