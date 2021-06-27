@@ -9,6 +9,8 @@
 	--color-white: hsl(255, 100%, 100%);
 	--color-shadow: rgba(0, 0, 0, 0.2);
 	--color-border-input: #ccc;
+
+	--values-min-width: 337.5px;
 }
 
 *,
@@ -27,14 +29,14 @@ body {
 /* container info */
 
 .container {
-	max-width: 375px;
+	min-width: 375px;
 	height: 100vh;
 	margin: 0 auto;
 	background: url(../public/images/bg-intro-mobile.png) no-repeat var(--color-red);
 }
 
 .container__info {
-	width: 90%;
+	width: var(--values-min-width);
 	margin: 0 auto 36px auto;
 	color: var(--color-white);
 }
@@ -54,10 +56,11 @@ body {
 }
 
 /* container try */
+
 .container__try {
 	display: flex;
 	align-items: center;
-	width: 90%;
+	width: var(--values-min-width);
 	margin: 0 auto 20px auto;
 	background-color: var(--color-blue);
 	border-radius: 8px;
@@ -79,7 +82,7 @@ body {
 /* contaienr form */
 
 .container__form {
-	width: 90%;
+	width: var(--values-min-width);
 	height: max-content;
 	margin: 0 auto;
 	background-color: var(--color-white);
