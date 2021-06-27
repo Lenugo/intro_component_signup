@@ -31,25 +31,25 @@ body {
 
 .container {
 	min-width: 375px;
-	height: 100vh;
+	min-height: 100vh;
 	margin: 0 auto;
 	background-image: url(../public/images/bg-intro-mobile.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: var(--color-red);
-	display: flex;
-	flex-wrap: wrap;
+	padding-bottom: 36px;
 }
 
-.container__info {
+.container__info > * {
 	width: var(--values-min-width);
-	margin: 0 auto 36px auto;
+	margin: 0 auto 28px auto;
 	color: var(--color-white);
+	height: fit-content;
 }
 
 .container__info-title {
 	width: 280px;
-	padding: 90px 0 24px 0;
+	padding: 66px 0 24px 0;
 	margin: 0 auto;
 	line-height: 1.2;
 }
@@ -89,7 +89,7 @@ body {
 
 .container__form {
 	width: var(--values-min-width);
-	height: max-content;
+	height: min-content;
 	margin: 0 auto;
 	background-color: var(--color-white);
 	display: flex;
