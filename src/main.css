@@ -37,6 +37,7 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: var(--color-red);
+	position: relative;
 }
 
 .container__info > * {
@@ -168,6 +169,20 @@ body {
 	color: var(--color-red);
 }
 
+.footer {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
 @media (min-width: 546px) {
 	.container {
 		background-image: url(../public/images/bg-intro-desktop.png);
@@ -265,11 +280,3 @@ body {
 		margin-top: 0;
 	}
 }
-
-/* .attribution {
-	font-size: 11px;
-	text-align: center;
-}
-.attribution a {
-	color: hsl(228, 45%, 44%);
-} */
