@@ -55,7 +55,6 @@ body {
 
 .container__info-text {
 	text-align: center;
-	font-size: 17px;
 	margin: 0 auto;
 	padding-bottom: 30px;
 }
@@ -81,7 +80,6 @@ body {
 
 	animation-name: slideLeft;
 	animation-duration: 3s;
-	/* animation-iteration-count: infinite; */
 }
 
 .try-text-strong {
@@ -230,6 +228,9 @@ body {
 		margin: 0;
 		min-width: 480px;
 		font-size: 3.3rem;
+
+		animation-name: slideFrom;
+		animation-duration: 3s;
 	}
 
 	.container__info-text {
@@ -243,6 +244,8 @@ body {
 	}
 }
 
+/* Animations */
+
 @keyframes slideLeft {
 	from {
 		margin-left: 80%;
@@ -253,6 +256,16 @@ body {
 		width: 100%;
 	}
 }
+
+@keyframes slideFrom {
+	from {
+		margin-top: 100%;
+	}
+	to {
+		margin-top: 0;
+	}
+}
+
 /* .attribution {
 	font-size: 11px;
 	text-align: center;
