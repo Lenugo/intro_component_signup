@@ -144,6 +144,16 @@ body {
 	margin: 8px 0;
 }
 
+.btn-form:hover {
+	cursor: pointer;
+	box-shadow: -1px -5px 10px rgba(0, 0, 0, 0.2), 1px 5px 10px rgba(0, 0, 0, 0.2);
+	transform: rotateY(15deg);
+	-webkit-transform: rotateY(15deg);
+	-moz-transform: rotateY(15deg);
+	-ms-transform: rotateY(15deg);
+	-o-transform: rotateY(15deg);
+}
+
 .footer-text {
 	text-align: center;
 	font-size: small;
