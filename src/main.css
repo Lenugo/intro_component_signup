@@ -78,6 +78,10 @@ body {
 	text-align: center;
 	color: var(--color-white);
 	box-shadow: 0 6px var(--color-shadow);
+
+	animation-name: slideLeft;
+	animation-duration: 3s;
+	/* animation-iteration-count: infinite; */
 }
 
 .try-text-strong {
@@ -239,6 +243,16 @@ body {
 	}
 }
 
+@keyframes slideLeft {
+	from {
+		margin-left: 80%;
+		width: 60%;
+	}
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
 /* .attribution {
 	font-size: 11px;
 	text-align: center;
