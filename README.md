@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Frontend Mentor | Intro component with sign-up form](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1/hub/responsive-intro-component-workflow-mobile-first-using-flexbox-48ZK-vQ1Z)
+-   Solution URL: [Frontend Mentor | Intro component with sign-up form](https://www.frontendmentor.io/solutions/responsive-intro-component-workflow-mobile-first-using-flexbox-48ZK-vQ1Z)
 -   Live Site URL: [Deploy with github page](https://lenugo.github.io/intro_component_signup/)
 
 ## My process
